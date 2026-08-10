@@ -96,7 +96,7 @@ const cityData = {
   lehi: {
     name: "Lehi, Utah",
     description:
-      "Home to Silicon Slopes and Thanksgiving Point, Lehi is one of Utah's fastest-growing cities — a mix of tech-driven energy and family-friendly master-planned neighborhoods.",
+      "Home to Silicon Slopes and Thanksgiving Point, Lehi is one of Utah's fastest-growing cities, blending tech-driven energy with family-friendly master-planned neighborhoods.",
     image: "assets/lehi.jpg",
   },
   orem: {
@@ -108,8 +108,8 @@ const cityData = {
   vineyard: {
     name: "Vineyard, Utah",
     description:
-      "One of Utah's newest and fastest-growing cities, Vineyard sits right on the shore of Utah Lake — a master-planned community with modern homes, parks, and lake views just minutes from Orem and Provo.",
-    // image: "assets/vineyard.jpg",
+      "One of Utah's newest and fastest-growing cities, Vineyard sits right on the shore of Utah Lake, offering a master-planned community with modern homes, parks, and lake views just minutes from Orem and Provo.",
+    image: "assets/vineyard.jpg",
   },
   provo: {
     name: "Provo, Utah",
@@ -174,7 +174,7 @@ const cityData = {
   sandy: {
     name: "Sandy, Utah",
     description:
-      "Sandy is an established suburb with excellent schools and quick access to Alta and Snowbird — a favorite for families who love the mountains.",
+      "Sandy is an established suburb with excellent schools and quick access to Alta and Snowbird, making it a favorite for families who love the mountains.",
   },
   draper: {
     name: "Draper, Utah",
