@@ -97,11 +97,13 @@ const cityData = {
     name: "Lehi, Utah",
     description:
       "Home to Silicon Slopes and Thanksgiving Point, Lehi is one of Utah's fastest-growing cities — a mix of tech-driven energy and family-friendly master-planned neighborhoods.",
+    image: "assets/lehi.jpg",
   },
   orem: {
     name: "Orem, Utah",
     description:
       "Orem offers a walkable, community feel with easy access to Utah Lake, the Wasatch mountains, and Utah Valley University.",
+    image: "assets/orem.jpg",
   },
   vineyard: {
     name: "Vineyard, Utah",
