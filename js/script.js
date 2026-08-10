@@ -103,6 +103,12 @@ const cityData = {
     description:
       "Orem offers a walkable, community feel with easy access to Utah Lake, the Wasatch mountains, and Utah Valley University.",
   },
+  vineyard: {
+    name: "Vineyard, Utah",
+    description:
+      "One of Utah's newest and fastest-growing cities, Vineyard sits right on the shore of Utah Lake — a master-planned community with modern homes, parks, and lake views just minutes from Orem and Provo.",
+    // image: "assets/vineyard.jpg",
+  },
   provo: {
     name: "Provo, Utah",
     description:
