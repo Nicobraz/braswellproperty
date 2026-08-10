@@ -84,7 +84,7 @@ const cityData = {
   highland: {
     name: "Highland, Utah",
     description:
-      "Highland is where I grew up — a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
+      "Highland is where I grew up. It's a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
     image: "assets/highland.jpg",
   },
   "american-fork": {
