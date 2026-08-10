@@ -208,23 +208,6 @@ p {
   margin: 28px 0 40px;
 }
 
-.hero-stats {
-  display: flex;
-  gap: 40px;
-}
-
-.hero-stats strong {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  color: var(--color-primary-dark);
-}
-
-.hero-stats span {
-  font-size: 0.85rem;
-  color: var(--color-ink-soft);
-}
-
 .hero-visual {
   filter: drop-shadow(0 20px 40px rgba(47, 74, 62, 0.18));
 }
@@ -294,26 +277,30 @@ p {
   box-shadow: 0 20px 40px rgba(47, 74, 62, 0.12);
 }
 
-.about-list {
+.fact-list {
   list-style: none;
   padding: 0;
-  margin: 24px 0 0;
+  margin: 0 0 32px;
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
-.about-list li {
+.fact-list li {
   position: relative;
-  padding-left: 28px;
+  padding-left: 20px;
   color: var(--color-ink-soft);
+  font-size: 0.95rem;
 }
 
-.about-list li::before {
-  content: "✓";
+.fact-list li::before {
+  content: "";
   position: absolute;
   left: 0;
-  color: var(--color-accent);
-  font-weight: 700;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
 }
 
 /* Service Area */

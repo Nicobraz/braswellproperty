@@ -23,7 +23,7 @@ const contactSection = document.getElementById("contact");
 const headingByIntent = {
   buy: "Ready to buy?",
   sell: "Ready to sell?",
-  both: "Ready to make your move?",
+  both: "Ready to talk through your options?",
 };
 
 intentButtons.forEach((btn) => {
