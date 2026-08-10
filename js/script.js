@@ -121,26 +121,31 @@ const cityData = {
     name: "Saratoga Springs, Utah",
     description:
       "A fast-growing lakeside community on Utah Lake, Saratoga Springs offers new construction, master-planned neighborhoods, and some of the best sunset views around.",
+    image: "assets/saratoga-springs.jpg",
   },
   "eagle-mountain": {
     name: "Eagle Mountain, Utah",
     description:
       "One of Utah's fastest-growing cities, Eagle Mountain offers spacious lots, sweeping valley views, and a more laid-back pace at the edge of Utah County.",
+    image: "assets/eagle-mountain.jpg",
   },
   "pleasant-grove": {
     name: "Pleasant Grove, Utah",
     description:
       "Pleasant Grove combines a historic downtown and close-knit community feel with easy access to Timpanogos hiking trails.",
+    image: "assets/pleasant-grove.jpg",
   },
   alpine: {
     name: "Alpine, Utah",
     description:
       "Tucked against the mountains with larger lots and top-rated schools, Alpine is one of Utah County's most scenic and sought-after communities.",
+    image: "assets/alpine.jpg",
   },
   "spanish-fork": {
     name: "Spanish Fork, Utah",
     description:
       "Spanish Fork blends small-town charm with steady growth, home to the annual Fiesta Days celebration and easy access to Spanish Fork Canyon.",
+    image: "assets/spanish-fork.jpg",
   },
   mapleton: {
     name: "Mapleton, Utah",
@@ -151,56 +156,85 @@ const cityData = {
     name: "Payson, Utah",
     description:
       "In southern Utah County, Payson offers small-town charm, a historic temple, and easy access to Payson Canyon and Payson Lakes.",
+    image: "assets/payson.jpg",
   },
   "salt-lake-city": {
     name: "Salt Lake City, Utah",
     description:
       "Utah's capital pairs a vibrant downtown and diverse neighborhoods with quick access to world-class ski resorts in the surrounding canyons.",
+    image: "assets/salt-lake-city.jpg",
   },
   "south-jordan": {
     name: "South Jordan, Utah",
     description:
       "South Jordan is known for master-planned communities like Daybreak, plus shopping, trails, and easy freeway access.",
+    image: "assets/south-jordan.jpg",
   },
   "west-jordan": {
     name: "West Jordan, Utah",
     description:
       "One of Utah's largest cities, West Jordan offers diverse, affordable neighborhoods close to shopping, parks, and the Jordan River Parkway.",
+    image: "assets/west-jordan.jpg",
   },
   "west-valley-city": {
     name: "West Valley City, Utah",
     description:
       "Utah's second-largest city, West Valley City is known for its cultural diversity and community amenities like the Utah Cultural Celebration Center.",
+    image: "assets/west-valley-city.jpg",
   },
   sandy: {
     name: "Sandy, Utah",
     description:
       "Sandy is an established suburb with excellent schools and quick access to Alta and Snowbird, making it a favorite for families who love the mountains.",
+    image: "assets/sandy.jpg",
   },
   draper: {
     name: "Draper, Utah",
     description:
       "Nestled at the base of the mountains, Draper mixes a growing tech corridor with outdoor access to Corner Canyon's extensive trail system.",
+    image: "assets/draper.jpg",
   },
   riverton: {
     name: "Riverton, Utah",
     description:
       "Riverton offers a family-friendly, small-town feel along the Jordan River, with growing retail and dining options nearby.",
+    image: "assets/riverton.jpg",
   },
   herriman: {
     name: "Herriman, Utah",
     description:
       "One of the fastest-growing cities in the state, Herriman offers new master-planned communities and sweeping mountain and valley views.",
+    image: "assets/herriman.jpg",
   },
   bluffdale: {
     name: "Bluffdale, Utah",
     description:
       "Bluffdale blends semi-rural charm with new development, sitting near Camp Williams and the rapidly growing Point of the Mountain area.",
+    image: "assets/bluffdale.jpg",
   },
   "cottonwood-heights": {
     name: "Cottonwood Heights, Utah",
     description:
       "A foothill community at the mouth of Big and Little Cottonwood Canyons, Cottonwood Heights is the gateway to some of the best skiing in the world.",
+    image: "assets/cottonwood-heights.jpg",
+  },
+  "cedar-hills": {
+    name: "Cedar Hills, Utah",
+    description:
+      "A small, quiet city bordering Pleasant Grove and Highland, Cedar Hills is known for its golf course, well-kept neighborhoods, and easy access to trails along the Wasatch Front.",
+    image: "assets/cedar-hills.jpg",
+  },
+  lindon: {
+    name: "Lindon, Utah",
+    description:
+      "Tucked between Orem and Pleasant Grove, Lindon offers a quiet residential feel with quick access to I-15, Utah Lake, and the Lindon Marina.",
+    image: "assets/lindon.jpg",
+  },
+  taylorsville: {
+    name: "Taylorsville, Utah",
+    description:
+      "A centrally located Salt Lake County city, Taylorsville offers established neighborhoods, easy freeway access, and proximity to the Jordan River Parkway.",
+    image: "assets/taylorsville.jpg",
   },
 };
 
