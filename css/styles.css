@@ -249,7 +249,8 @@ p {
 }
 
 .intent-btn:hover {
-  background: var(--color-tint);
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .intent-btn.active {
