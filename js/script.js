@@ -58,8 +58,9 @@ updateMessagePlaceholder(interestSelect.value);
 
 const form = document.getElementById("contactForm");
 const status = document.getElementById("formStatus");
+const submitButton = form.querySelector("button[type=submit]");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const name = form.name.value.trim();
@@ -72,11 +73,31 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // No backend wired up yet — replace with a real submission endpoint
-  // (e.g. Formspree, Netlify Forms, or a custom API) when ready to go live.
-  status.textContent = "Thanks! Your message has been received — I'll be in touch soon.";
-  status.className = "form-status success";
-  form.reset();
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      status.textContent = "Thanks! Your message has been received — I'll be in touch soon.";
+      status.className = "form-status success";
+      form.reset();
+    } else {
+      status.textContent = "Something went wrong sending your message. Please try emailing me directly.";
+      status.className = "form-status error";
+    }
+  } catch (err) {
+    status.textContent = "Something went wrong sending your message. Please try emailing me directly.";
+    status.className = "form-status error";
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Send Message";
+  }
 });
 
 // Placeholder blurbs — swap in Taylor's own notes/photos per city when ready.
