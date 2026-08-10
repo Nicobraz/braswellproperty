@@ -115,6 +115,7 @@ const cityData = {
     name: "Provo, Utah",
     description:
       "Utah County's largest city, Provo pairs a vibrant downtown and BYU campus energy with quick access to Provo Canyon and Rock Canyon trails.",
+    image: "assets/provo.jpg",
   },
   "saratoga-springs": {
     name: "Saratoga Springs, Utah",
