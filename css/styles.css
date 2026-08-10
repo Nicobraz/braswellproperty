@@ -49,7 +49,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-accent);
   margin: 0 0 12px;
 }
@@ -294,21 +294,8 @@ p {
 }
 
 .fact-list li {
-  position: relative;
-  padding-left: 20px;
   color: var(--color-ink-soft);
   font-size: 0.95rem;
-}
-
-.fact-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--color-accent);
 }
 
 /* Service Area */
