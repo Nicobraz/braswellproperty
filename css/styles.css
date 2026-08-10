@@ -221,28 +221,25 @@ p {
 
 .intent-buttons {
   display: inline-flex;
-  gap: 8px;
-  padding: 6px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .intent-btn {
   border: none;
-  background: transparent;
+  background: var(--color-border);
   padding: 10px 22px;
   border-radius: 999px;
   font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--color-ink-soft);
+  color: var(--color-primary-dark);
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .intent-btn:hover {
-  color: var(--color-primary-dark);
+  background: var(--color-tint);
 }
 
 .intent-btn.active {
@@ -504,8 +501,7 @@ p {
 }
 
 .contact-form {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: var(--color-border);
   border-radius: var(--radius);
   padding: 32px;
 }
