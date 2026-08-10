@@ -114,27 +114,28 @@
             insight, not just market averages.
           </p>
           <ul class="area-chips">
-            <li>Highland</li>
-            <li>Lehi</li>
-            <li>Orem</li>
-            <li>Provo</li>
-            <li>Saratoga Springs</li>
-            <li>Eagle Mountain</li>
-            <li>Pleasant Grove</li>
-            <li>Alpine</li>
-            <li>Spanish Fork</li>
-            <li>Mapleton</li>
-            <li>Payson</li>
-            <li>Salt Lake City</li>
-            <li>South Jordan</li>
-            <li>West Jordan</li>
-            <li>West Valley City</li>
-            <li>Sandy</li>
-            <li>Draper</li>
-            <li>Riverton</li>
-            <li>Herriman</li>
-            <li>Bluffdale</li>
-            <li>Cottonwood Heights</li>
+            <li><button type="button" class="area-chip" data-city="highland">Highland</button></li>
+            <li><button type="button" class="area-chip" data-city="american-fork">American Fork</button></li>
+            <li><button type="button" class="area-chip" data-city="lehi">Lehi</button></li>
+            <li><button type="button" class="area-chip" data-city="orem">Orem</button></li>
+            <li><button type="button" class="area-chip" data-city="provo">Provo</button></li>
+            <li><button type="button" class="area-chip" data-city="saratoga-springs">Saratoga Springs</button></li>
+            <li><button type="button" class="area-chip" data-city="eagle-mountain">Eagle Mountain</button></li>
+            <li><button type="button" class="area-chip" data-city="pleasant-grove">Pleasant Grove</button></li>
+            <li><button type="button" class="area-chip" data-city="alpine">Alpine</button></li>
+            <li><button type="button" class="area-chip" data-city="spanish-fork">Spanish Fork</button></li>
+            <li><button type="button" class="area-chip" data-city="mapleton">Mapleton</button></li>
+            <li><button type="button" class="area-chip" data-city="payson">Payson</button></li>
+            <li><button type="button" class="area-chip" data-city="salt-lake-city">Salt Lake City</button></li>
+            <li><button type="button" class="area-chip" data-city="south-jordan">South Jordan</button></li>
+            <li><button type="button" class="area-chip" data-city="west-jordan">West Jordan</button></li>
+            <li><button type="button" class="area-chip" data-city="west-valley-city">West Valley City</button></li>
+            <li><button type="button" class="area-chip" data-city="sandy">Sandy</button></li>
+            <li><button type="button" class="area-chip" data-city="draper">Draper</button></li>
+            <li><button type="button" class="area-chip" data-city="riverton">Riverton</button></li>
+            <li><button type="button" class="area-chip" data-city="herriman">Herriman</button></li>
+            <li><button type="button" class="area-chip" data-city="bluffdale">Bluffdale</button></li>
+            <li><button type="button" class="area-chip" data-city="cottonwood-heights">Cottonwood Heights</button></li>
           </ul>
         </div>
         <div class="service-area-visual" aria-hidden="true">
@@ -278,6 +279,17 @@
       <p>&copy; <span id="year"></span> Taylor Braswell Realty. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- City info popup -->
+  <div class="city-modal" id="cityModal" aria-hidden="true">
+    <div class="city-modal-backdrop" data-close></div>
+    <div class="city-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cityModalTitle">
+      <button type="button" class="city-modal-close" data-close aria-label="Close">&times;</button>
+      <div class="city-modal-image" id="cityModalImage"></div>
+      <h3 id="cityModalTitle"></h3>
+      <p id="cityModalDesc"></p>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

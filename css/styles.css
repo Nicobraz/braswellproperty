@@ -369,13 +369,22 @@ p {
   gap: 10px;
 }
 
-.area-chips li {
+.area-chip {
   background: var(--color-border);
   color: var(--color-primary-dark);
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 0.85rem;
   padding: 8px 16px;
+  border: none;
   border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.area-chip:hover {
+  background: var(--color-primary);
+  color: #fff;
 }
 
 .service-area-visual {
@@ -612,6 +621,77 @@ input:focus, select:focus, textarea:focus {
 #social,
 #contact {
   scroll-margin-top: 90px;
+}
+
+/* City modal */
+.city-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.city-modal.open {
+  display: flex;
+}
+
+.city-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.city-modal-panel {
+  position: relative;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  max-width: 420px;
+  width: 100%;
+  padding: 32px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.city-modal-panel h3 {
+  margin: 0 0 10px;
+}
+
+.city-modal-panel p {
+  margin: 0;
+}
+
+.city-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-border);
+  color: var(--color-primary-dark);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.city-modal-close:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.city-modal-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 2px);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #f5efe6, #ebdecd);
 }
 
 /* Responsive */

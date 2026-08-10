@@ -78,3 +78,152 @@ form.addEventListener("submit", (e) => {
   status.className = "form-status success";
   form.reset();
 });
+
+// Placeholder blurbs — swap in Taylor's own notes/photos per city when ready.
+const cityData = {
+  highland: {
+    name: "Highland, Utah",
+    description:
+      "Highland is where I grew up — a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
+  },
+  "american-fork": {
+    name: "American Fork, Utah",
+    description:
+      "Bordered by Utah Lake and the Wasatch Mountains, American Fork blends small-town charm with easy access to American Fork Canyon, Timpanogos Cave, and a growing downtown scene.",
+  },
+  lehi: {
+    name: "Lehi, Utah",
+    description:
+      "Home to Silicon Slopes and Thanksgiving Point, Lehi is one of Utah's fastest-growing cities — a mix of tech-driven energy and family-friendly master-planned neighborhoods.",
+  },
+  orem: {
+    name: "Orem, Utah",
+    description:
+      "Orem offers a walkable, community feel with easy access to Utah Lake, the Wasatch mountains, and Utah Valley University.",
+  },
+  provo: {
+    name: "Provo, Utah",
+    description:
+      "Utah County's largest city, Provo pairs a vibrant downtown and BYU campus energy with quick access to Provo Canyon and Rock Canyon trails.",
+  },
+  "saratoga-springs": {
+    name: "Saratoga Springs, Utah",
+    description:
+      "A fast-growing lakeside community on Utah Lake, Saratoga Springs offers new construction, master-planned neighborhoods, and some of the best sunset views around.",
+  },
+  "eagle-mountain": {
+    name: "Eagle Mountain, Utah",
+    description:
+      "One of Utah's fastest-growing cities, Eagle Mountain offers spacious lots, sweeping valley views, and a more laid-back pace at the edge of Utah County.",
+  },
+  "pleasant-grove": {
+    name: "Pleasant Grove, Utah",
+    description:
+      "Pleasant Grove combines a historic downtown and close-knit community feel with easy access to Timpanogos hiking trails.",
+  },
+  alpine: {
+    name: "Alpine, Utah",
+    description:
+      "Tucked against the mountains with larger lots and top-rated schools, Alpine is one of Utah County's most scenic and sought-after communities.",
+  },
+  "spanish-fork": {
+    name: "Spanish Fork, Utah",
+    description:
+      "Spanish Fork blends small-town charm with steady growth, home to the annual Fiesta Days celebration and easy access to Spanish Fork Canyon.",
+  },
+  mapleton: {
+    name: "Mapleton, Utah",
+    description:
+      "Mapleton offers a quiet, semi-rural feel with larger properties and stunning views of Spanish Fork Peak and Maple Mountain.",
+  },
+  payson: {
+    name: "Payson, Utah",
+    description:
+      "In southern Utah County, Payson offers small-town charm, a historic temple, and easy access to Payson Canyon and Payson Lakes.",
+  },
+  "salt-lake-city": {
+    name: "Salt Lake City, Utah",
+    description:
+      "Utah's capital pairs a vibrant downtown and diverse neighborhoods with quick access to world-class ski resorts in the surrounding canyons.",
+  },
+  "south-jordan": {
+    name: "South Jordan, Utah",
+    description:
+      "South Jordan is known for master-planned communities like Daybreak, plus shopping, trails, and easy freeway access.",
+  },
+  "west-jordan": {
+    name: "West Jordan, Utah",
+    description:
+      "One of Utah's largest cities, West Jordan offers diverse, affordable neighborhoods close to shopping, parks, and the Jordan River Parkway.",
+  },
+  "west-valley-city": {
+    name: "West Valley City, Utah",
+    description:
+      "Utah's second-largest city, West Valley City is known for its cultural diversity and community amenities like the Utah Cultural Celebration Center.",
+  },
+  sandy: {
+    name: "Sandy, Utah",
+    description:
+      "Sandy is an established suburb with excellent schools and quick access to Alta and Snowbird — a favorite for families who love the mountains.",
+  },
+  draper: {
+    name: "Draper, Utah",
+    description:
+      "Nestled at the base of the mountains, Draper mixes a growing tech corridor with outdoor access to Corner Canyon's extensive trail system.",
+  },
+  riverton: {
+    name: "Riverton, Utah",
+    description:
+      "Riverton offers a family-friendly, small-town feel along the Jordan River, with growing retail and dining options nearby.",
+  },
+  herriman: {
+    name: "Herriman, Utah",
+    description:
+      "One of the fastest-growing cities in the state, Herriman offers new master-planned communities and sweeping mountain and valley views.",
+  },
+  bluffdale: {
+    name: "Bluffdale, Utah",
+    description:
+      "Bluffdale blends semi-rural charm with new development, sitting near Camp Williams and the rapidly growing Point of the Mountain area.",
+  },
+  "cottonwood-heights": {
+    name: "Cottonwood Heights, Utah",
+    description:
+      "A foothill community at the mouth of Big and Little Cottonwood Canyons, Cottonwood Heights is the gateway to some of the best skiing in the world.",
+  },
+};
+
+const cityModal = document.getElementById("cityModal");
+const cityModalTitle = document.getElementById("cityModalTitle");
+const cityModalDesc = document.getElementById("cityModalDesc");
+
+function openCityModal(citySlug) {
+  const city = cityData[citySlug];
+  if (!city) return;
+
+  cityModalTitle.textContent = city.name;
+  cityModalDesc.textContent = city.description;
+  cityModal.classList.add("open");
+  cityModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeCityModal() {
+  cityModal.classList.remove("open");
+  cityModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".area-chip").forEach((btn) => {
+  btn.addEventListener("click", () => openCityModal(btn.dataset.city));
+});
+
+cityModal.querySelectorAll("[data-close]").forEach((el) => {
+  el.addEventListener("click", closeCityModal);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && cityModal.classList.contains("open")) {
+    closeCityModal();
+  }
+});
