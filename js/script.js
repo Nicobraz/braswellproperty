@@ -21,8 +21,8 @@ const contactHeading = document.getElementById("contactHeading");
 const contactSection = document.getElementById("contact");
 
 const headingByIntent = {
-  buy: "Ready to buy?",
-  sell: "Ready to sell?",
+  buy: "Thinking about buying?",
+  sell: "Thinking about selling?",
   both: "Let's start with a conversation.",
 };
 
