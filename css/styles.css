@@ -708,6 +708,7 @@ input:focus, select:focus, textarea:focus {
 
 /* Scroll offset for sticky header */
 #about,
+#resources,
 #service-area,
 #social,
 #contact {
