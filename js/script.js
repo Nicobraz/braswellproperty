@@ -91,6 +91,7 @@ const cityData = {
     name: "American Fork, Utah",
     description:
       "Bordered by Utah Lake and the Wasatch Mountains, American Fork blends small-town charm with easy access to American Fork Canyon, Timpanogos Cave, and a growing downtown scene.",
+    image: "assets/american-fork.jpg",
   },
   lehi: {
     name: "Lehi, Utah",
