@@ -347,6 +347,39 @@ p {
   font-size: 0.95rem;
 }
 
+/* Resources */
+.resources {
+  padding: 96px 0;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 48px;
+  margin-top: 48px;
+}
+
+.resource-item {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.resource-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.resource-item h3 {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  margin: 0;
+}
+
 /* Service Area */
 .service-area {
   padding: 96px 0;
@@ -718,6 +751,11 @@ input:focus, select:focus, textarea:focus {
   .contact-inner,
   .service-area-inner {
     grid-template-columns: 1fr;
+  }
+
+  .resource-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
 
   .about-photo {
