@@ -132,14 +132,13 @@ p {
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  color: var(--color-accent);
+.logo-img {
+  height: 40px;
+  width: auto;
 }
 
 .nav {
@@ -375,6 +374,9 @@ input:focus, select:focus, textarea:focus {
 }
 
 .logo-footer {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.3rem;
   color: #fff;
 }
 
