@@ -250,6 +250,54 @@ p {
   color: #fff;
 }
 
+/* Process */
+.process {
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+
+.process-intro {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-ink);
+  margin: 0 0 18px;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-ink-soft);
+}
+
+.process-steps .step-num {
+  color: var(--color-primary);
+  margin-right: 6px;
+}
+
+.process-steps .step-arrow {
+  color: var(--color-ink-soft);
+  opacity: 0.5;
+}
+
+.process-outro {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
 /* About */
 .about {
   padding: 96px 0;
