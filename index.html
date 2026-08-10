@@ -21,6 +21,7 @@
       </a>
       <nav class="nav" id="nav">
         <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
         <a href="#contact">Contact</a>
         <a href="tel:+15555550123" class="nav-phone">(555) 555-0123</a>
       </nav>
@@ -43,6 +44,14 @@
             move simple, informed, and genuinely exciting &mdash; whether you're buying
             your first home or selling the one you've loved for years.
           </p>
+          <div class="intent-toggle" role="group" aria-label="I'm looking to">
+            <span class="intent-label">I'm looking to&hellip;</span>
+            <div class="intent-buttons">
+              <button type="button" class="intent-btn" data-intent="buy">Buying</button>
+              <button type="button" class="intent-btn" data-intent="sell">Selling</button>
+              <button type="button" class="intent-btn" data-intent="both">Both</button>
+            </div>
+          </div>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Get a Free Consultation</a>
             <a href="tel:+15555550123" class="btn btn-ghost">Call (555) 555-0123</a>
@@ -110,12 +119,101 @@
       </div>
     </section>
 
+    <!-- SCHEDULE A CALL -->
+    <section class="schedule" id="schedule">
+      <div class="container schedule-inner">
+        <p class="eyebrow">Book Time With Me</p>
+        <h2>Schedule a free call</h2>
+        <p class="schedule-sub">
+          Pick a time that works for you and we'll talk through your goals &mdash;
+          no obligation, just a conversation about your next move.
+        </p>
+        <!-- Placeholder Calendly link: replace data-url with Taylor's real scheduling link -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/taylor-braswell-realty/30min" style="min-width:320px;height:700px;"></div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section class="service-area" id="service-area">
+      <div class="container service-area-inner">
+        <div class="service-area-copy">
+          <p class="eyebrow">Where I Work</p>
+          <h2>Local expertise, mapped out.</h2>
+          <p>
+            I focus on Braswell County and the communities that surround it, so
+            you get neighborhood-level insight &mdash; not just market averages.
+          </p>
+          <ul class="area-chips">
+            <li>Downtown Braswell</li>
+            <li>Cedar Ridge</li>
+            <li>Millbrook</li>
+            <li>Hartwell Heights</li>
+            <li>North Shore</li>
+            <li>Fairview</li>
+          </ul>
+        </div>
+        <div class="service-area-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="400" rx="20" fill="#eef0ea" />
+            <path d="M60 90 C120 60 180 120 220 90 C280 60 340 100 350 150 C360 220 300 260 320 320 C330 350 300 360 260 340 C200 310 180 360 120 340 C70 323 90 280 60 250 C20 210 40 130 60 90 Z" fill="#dfe6da" />
+            <circle cx="150" cy="160" r="8" fill="#2f4a3e" />
+            <circle cx="230" cy="130" r="8" fill="#2f4a3e" />
+            <circle cx="200" cy="220" r="8" fill="#c99a5b" />
+            <circle cx="270" cy="250" r="8" fill="#2f4a3e" />
+            <circle cx="130" cy="260" r="8" fill="#2f4a3e" />
+            <path d="M150 160 L230 130 L200 220 L270 250 M200 220 L130 260" stroke="#2f4a3e" stroke-width="2" fill="none" opacity="0.4" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOLLOW & RECENT POSTS -->
+    <section class="social" id="social">
+      <div class="container">
+        <div class="social-header">
+          <div>
+            <p class="eyebrow">Follow Along</p>
+            <h2>Recent posts</h2>
+          </div>
+          <div class="social-icons">
+            <a href="https://instagram.com/taylorbraswellrealty" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+            </a>
+            <a href="https://facebook.com/taylorbraswellrealty" aria-label="Facebook" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z" /></svg>
+            </a>
+            <a href="https://linkedin.com/in/taylorbraswellrealty" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3" /><line x1="8" y1="11" x2="8" y2="16" /><circle cx="8" cy="8" r="0.5" fill="currentColor" /><path d="M12 16v-3a2 2 0 0 1 4 0v3" /></svg>
+            </a>
+          </div>
+        </div>
+        <!-- Manually update these cards with new posts as Taylor shares them -->
+        <div class="post-grid">
+          <a class="post-card" href="https://instagram.com/taylorbraswellrealty" target="_blank" rel="noopener">
+            <div class="post-thumb post-thumb-1"></div>
+            <p class="post-caption">Just listed: charming 3-bed in Cedar Ridge &mdash; open house this weekend!</p>
+            <span class="post-link">View post &rarr;</span>
+          </a>
+          <a class="post-card" href="https://instagram.com/taylorbraswellrealty" target="_blank" rel="noopener">
+            <div class="post-thumb post-thumb-2"></div>
+            <p class="post-caption">Sold! Congrats to the Millers on their new home in Millbrook.</p>
+            <span class="post-link">View post &rarr;</span>
+          </a>
+          <a class="post-card" href="https://instagram.com/taylorbraswellrealty" target="_blank" rel="noopener">
+            <div class="post-thumb post-thumb-3"></div>
+            <p class="post-caption">5 tips for first-time buyers navigating today's market.</p>
+            <span class="post-link">View post &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="container contact-inner">
         <div class="contact-intro">
           <p class="eyebrow">Let's Talk</p>
-          <h2>Ready to make your move?</h2>
+          <h2 id="contactHeading">Ready to make your move?</h2>
           <p>
             Tell me a bit about what you're looking for and I'll get back to you
             within one business day. No pressure, just honest advice.
@@ -175,10 +273,22 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="#top" class="logo-footer">Taylor Braswell <span>Realty</span></a>
+      <div class="social-icons social-icons-footer">
+        <a href="https://instagram.com/taylorbraswellrealty" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+        </a>
+        <a href="https://facebook.com/taylorbraswellrealty" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z" /></svg>
+        </a>
+        <a href="https://linkedin.com/in/taylorbraswellrealty" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3" /><line x1="8" y1="11" x2="8" y2="16" /><circle cx="8" cy="8" r="0.5" fill="currentColor" /><path d="M12 16v-3a2 2 0 0 1 4 0v3" /></svg>
+        </a>
+      </div>
       <p>&copy; <span id="year"></span> Taylor Braswell Realty. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>

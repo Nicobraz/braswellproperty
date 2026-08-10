@@ -15,6 +15,28 @@ nav.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const intentButtons = document.querySelectorAll(".intent-btn");
+const interestSelect = document.getElementById("interest");
+const contactHeading = document.getElementById("contactHeading");
+const contactSection = document.getElementById("contact");
+
+const headingByIntent = {
+  buy: "Ready to buy?",
+  sell: "Ready to sell?",
+  both: "Ready to make your move?",
+};
+
+intentButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const intent = btn.dataset.intent;
+
+    intentButtons.forEach((b) => b.classList.toggle("active", b === btn));
+    interestSelect.value = intent;
+    contactHeading.textContent = headingByIntent[intent];
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 const form = document.getElementById("contactForm");
 const status = document.getElementById("formStatus");
 
