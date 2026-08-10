@@ -588,14 +588,13 @@ input:focus, select:focus, textarea:focus {
 }
 
 .logo-footer {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.3rem;
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-.logo-footer span {
-  color: var(--color-border);
+.logo-footer-img {
+  height: 52px;
+  width: auto;
 }
 
 .footer-inner p {
