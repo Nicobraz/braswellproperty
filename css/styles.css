@@ -606,6 +606,18 @@ input:focus, select:focus, textarea:focus {
   font-size: 0.9rem;
 }
 
+.footer-license {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(237, 232, 218, 0.15);
+}
+
+.footer-license p {
+  margin: 0;
+  color: rgba(237, 232, 218, 0.55);
+  font-size: 0.8rem;
+}
+
 .social-icons-footer a {
   background: var(--color-border);
   border-color: var(--color-border);
