@@ -276,6 +276,13 @@ p {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(55, 44, 16, 0.12);
+  aspect-ratio: 4 / 5;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fact-list {
