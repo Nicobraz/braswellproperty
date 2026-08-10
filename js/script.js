@@ -85,6 +85,7 @@ const cityData = {
     name: "Highland, Utah",
     description:
       "Highland is where I grew up — a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
+    image: "assets/highland.jpg",
   },
   "american-fork": {
     name: "American Fork, Utah",
@@ -194,6 +195,7 @@ const cityData = {
 };
 
 const cityModal = document.getElementById("cityModal");
+const cityModalImage = document.getElementById("cityModalImage");
 const cityModalTitle = document.getElementById("cityModalTitle");
 const cityModalDesc = document.getElementById("cityModalDesc");
 
@@ -203,6 +205,7 @@ function openCityModal(citySlug) {
 
   cityModalTitle.textContent = city.name;
   cityModalDesc.textContent = city.description;
+  cityModalImage.style.backgroundImage = city.image ? `url(${city.image})` : "";
   cityModal.classList.add("open");
   cityModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";

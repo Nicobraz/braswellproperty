@@ -692,6 +692,8 @@ input:focus, select:focus, textarea:focus {
   border-radius: calc(var(--radius) - 2px);
   margin-bottom: 20px;
   background: linear-gradient(135deg, #f5efe6, #ebdecd);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Responsive */
