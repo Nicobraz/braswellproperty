@@ -306,6 +306,14 @@ p {
   opacity: 0.5;
 }
 
+.process-steps .step-break {
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .process-desc {
   margin: 0 0 18px;
   color: var(--color-ink-soft);
