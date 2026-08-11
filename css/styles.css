@@ -307,7 +307,7 @@ p {
 }
 
 .process-desc {
-  margin: 0;
+  margin: 0 0 18px;
   color: var(--color-ink-soft);
   max-width: 46ch;
 }
