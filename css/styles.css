@@ -280,7 +280,7 @@ p {
 }
 
 .process-track-label {
-  font-size: 0.78rem;
+  font-size: 1.05rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -324,7 +324,9 @@ p {
   font-weight: 700;
   font-size: clamp(1.3rem, 2.2vw, 1.7rem);
   color: var(--color-primary-dark);
-  margin: 8px 0 0;
+  margin: 40px 0 0;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
 }
 
 /* About */
@@ -495,42 +497,6 @@ p {
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
-}
-
-.approach-intro {
-  font-size: 1.08rem;
-  max-width: 46ch;
-  margin-bottom: 8px;
-}
-
-.approach-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 48px;
-  margin-top: 48px;
-}
-
-.approach-item {
-  padding-top: 28px;
-  border-top: 1px solid var(--color-border);
-}
-
-.approach-num {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-  color: var(--color-primary-dark);
-  margin: 0 0 12px;
-}
-
-.approach-num span {
-  color: var(--color-primary);
-  margin-right: 10px;
-}
-
-.approach-desc {
-  margin: 0;
-  color: var(--color-ink-soft);
 }
 
 /* Social */
@@ -863,8 +829,7 @@ input:focus, select:focus, textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .article-grid,
-  .approach-grid {
+  .article-grid {
     grid-template-columns: 1fr;
     gap: 28px;
   }
