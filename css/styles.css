@@ -265,24 +265,20 @@ p {
   border-top: 1px solid var(--color-border);
 }
 
-.process-track {
-  margin-top: 40px;
-  padding-top: 28px;
-  border-top: 1px solid var(--color-border);
+.process-intro {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-ink);
+  margin: 0 0 18px;
 }
 
-#for-buyers.process-track {
-  border-top: none;
-  padding-top: 0;
-}
-
-.process-track-label {
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-primary);
-  margin: 0 0 10px;
+.process-outro {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  color: var(--color-primary-dark);
+  margin: 18px 0 0;
 }
 
 .process-steps {
@@ -411,10 +407,15 @@ p {
   border-bottom: 1px solid var(--color-border);
 }
 
+.sellers {
+  padding: 96px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
 /* Social */
 .social {
   padding: 96px 0;
-  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
 }
 
 .social-header {
