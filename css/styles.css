@@ -309,7 +309,6 @@ p {
 .process-desc {
   margin: 0 0 18px;
   color: var(--color-ink-soft);
-  max-width: 46ch;
 }
 
 /* About */
@@ -415,7 +414,7 @@ p {
 /* Social */
 .social {
   padding: 96px 0;
-  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .social-header {

@@ -18,8 +18,9 @@ nav.querySelectorAll("a").forEach((link) => {
 const intentButtons = document.querySelectorAll(".intent-btn");
 const interestSelect = document.getElementById("interest");
 const contactHeading = document.getElementById("contactHeading");
-const contactSection = document.getElementById("contact");
 const messageField = document.getElementById("message");
+const buyersSection = document.getElementById("for-buyers");
+const sellersSection = document.getElementById("for-sellers");
 
 const headingByIntent = {
   buy: "Thinking about buying?",
@@ -46,7 +47,15 @@ intentButtons.forEach((btn) => {
     interestSelect.value = intent;
     contactHeading.textContent = headingByIntent[intent];
     updateMessagePlaceholder(intent);
-    contactSection.scrollIntoView({ behavior: "smooth" });
+
+    if (intent === "buy") {
+      buyersSection.scrollIntoView({ behavior: "smooth" });
+    } else if (intent === "sell") {
+      sellersSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      const boundary = sellersSection.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: boundary - window.innerHeight / 2, behavior: "smooth" });
+    }
   });
 });
 
