@@ -19,7 +19,7 @@ const intentButtons = document.querySelectorAll(".intent-btn");
 const interestSelect = document.getElementById("interest");
 const contactHeading = document.getElementById("contactHeading");
 const messageField = document.getElementById("message");
-const buyersSection = document.getElementById("for-buyers");
+const buyersSection = document.getElementById("approach");
 const sellersSection = document.getElementById("for-sellers");
 
 const headingByIntent = {

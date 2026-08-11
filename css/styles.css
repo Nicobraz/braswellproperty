@@ -310,6 +310,7 @@ p {
   margin: 0 0 18px;
   color: var(--color-ink-soft);
   max-width: 46ch;
+  font-size: 1.05rem;
 }
 
 /* About */
@@ -655,7 +656,7 @@ input:focus, select:focus, textarea:focus {
 #service-area,
 #social,
 #contact,
-#for-buyers,
+#approach,
 #for-sellers {
   scroll-margin-top: 90px;
 }
