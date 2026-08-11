@@ -352,31 +352,74 @@ p {
   padding: 96px 0;
 }
 
-.resource-grid {
+.resources-intro {
+  font-size: 1.08rem;
+  max-width: 52ch;
+}
+
+.article-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px 48px;
-  margin-top: 48px;
+  gap: 32px;
+  margin-top: 40px;
 }
 
-.resource-item {
-  padding-top: 28px;
-  border-top: 1px solid var(--color-border);
+.article-card {
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  padding-bottom: 24px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.resource-item h3 {
-  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-  margin: 0 0 12px;
+.article-thumb {
+  aspect-ratio: 16 / 10;
 }
 
-.resource-num {
-  color: var(--color-primary);
-  margin-right: 10px;
+.article-thumb-1 {
+  background: linear-gradient(135deg, #f5efe6, #ebdecd);
 }
 
-.resource-desc {
-  margin: 0;
+.article-thumb-2 {
+  background: linear-gradient(135deg, #ede8da, #ebdecd);
+}
+
+.article-thumb-3 {
+  background: linear-gradient(135deg, #fefefc, #ede8da);
+}
+
+.article-tag {
+  display: inline-block;
+  margin: 20px 24px 0;
+  padding: 4px 12px;
+  background: var(--color-border);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary-dark);
+}
+
+.article-card h3 {
+  margin: 14px 24px 8px;
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  line-height: 1.3;
+}
+
+.article-excerpt {
+  margin: 0 24px 14px;
   color: var(--color-ink-soft);
+  font-size: 0.95rem;
+}
+
+.article-link {
+  display: block;
+  margin: 0 24px;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.9rem;
 }
 
 /* Service Area */
@@ -797,7 +840,7 @@ input:focus, select:focus, textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .resource-grid,
+  .article-grid,
   .approach-grid {
     grid-template-columns: 1fr;
     gap: 28px;
