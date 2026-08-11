@@ -274,7 +274,9 @@ p {
 }
 
 .process-track {
-  margin-bottom: 24px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
 }
 
 .process-track-label {
@@ -773,7 +775,9 @@ input:focus, select:focus, textarea:focus {
 #resources,
 #service-area,
 #social,
-#contact {
+#contact,
+#for-buyers,
+#for-sellers {
   scroll-margin-top: 90px;
 }
 
