@@ -259,24 +259,15 @@ p {
 }
 
 /* Process */
-.process {
-  margin-top: 32px;
-  padding-top: 28px;
-  border-top: 1px solid var(--color-border);
-}
-
-.process-intro {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-style: italic;
-  color: var(--color-ink);
-  margin: 0 0 18px;
-}
-
 .process-track {
   margin-top: 40px;
   padding-top: 28px;
   border-top: 1px solid var(--color-border);
+}
+
+#for-buyers.process-track {
+  border-top: none;
+  padding-top: 0;
 }
 
 .process-track-label {
@@ -324,9 +315,7 @@ p {
   font-weight: 700;
   font-size: clamp(1.3rem, 2.2vw, 1.7rem);
   color: var(--color-primary-dark);
-  margin: 40px 0 0;
-  padding-top: 28px;
-  border-top: 1px solid var(--color-border);
+  margin: 16px 0 0;
 }
 
 /* About */
