@@ -273,6 +273,19 @@ p {
   margin: 0 0 18px;
 }
 
+.process-track {
+  margin-bottom: 24px;
+}
+
+.process-track-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+}
+
 .process-steps {
   display: flex;
   flex-wrap: wrap;
@@ -280,7 +293,7 @@ p {
   gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   font-size: 0.82rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -298,12 +311,18 @@ p {
   opacity: 0.5;
 }
 
+.process-desc {
+  margin: 0;
+  color: var(--color-ink-soft);
+  max-width: 46ch;
+}
+
 .process-outro {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(1.3rem, 2.2vw, 1.7rem);
   color: var(--color-primary-dark);
-  margin: 0;
+  margin: 8px 0 0;
 }
 
 /* About */
