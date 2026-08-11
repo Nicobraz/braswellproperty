@@ -48,13 +48,10 @@ intentButtons.forEach((btn) => {
     contactHeading.textContent = headingByIntent[intent];
     updateMessagePlaceholder(intent);
 
-    if (intent === "buy") {
-      buyersSection.scrollIntoView({ behavior: "smooth" });
-    } else if (intent === "sell") {
+    if (intent === "sell") {
       sellersSection.scrollIntoView({ behavior: "smooth" });
     } else {
-      const boundary = sellersSection.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: boundary - window.innerHeight / 2, behavior: "smooth" });
+      buyersSection.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
