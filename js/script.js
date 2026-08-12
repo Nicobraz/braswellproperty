@@ -50,6 +50,10 @@ intentButtons.forEach((btn) => {
 
     if (intent === "sell") {
       sellersSection.scrollIntoView({ behavior: "smooth" });
+    } else if (intent === "both") {
+      const headerHeight = document.querySelector("header").getBoundingClientRect().height;
+      const targetY = buyersSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top: targetY, behavior: "smooth" });
     } else {
       buyersSection.scrollIntoView({ behavior: "smooth" });
     }
