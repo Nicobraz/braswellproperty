@@ -310,7 +310,7 @@ p {
   margin: 0 0 18px;
   color: var(--color-ink-soft);
   max-width: 46ch;
-  font-size: 1.08rem;
+  font-size: 1.3rem;
 }
 
 /* About */
@@ -658,7 +658,7 @@ input:focus, select:focus, textarea:focus {
 #contact,
 #approach,
 #for-sellers {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 115px;
 }
 
 /* City modal */
