@@ -337,6 +337,7 @@ p {
   color: var(--color-ink-soft);
   max-width: 46ch;
   font-size: 1.3rem;
+  text-wrap: balance;
 }
 
 /* About */
