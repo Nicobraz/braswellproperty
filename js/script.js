@@ -23,8 +23,8 @@ const buyersSection = document.getElementById("approach");
 const sellersSection = document.getElementById("for-sellers");
 
 const headingByIntent = {
-  buy: "Thinking about buying?",
-  sell: "Thinking about selling?",
+  buy: "Thinking about buying? Let's talk.",
+  sell: "Thinking about selling? Let's talk.",
   both: "Let's start with a conversation.",
 };
 
