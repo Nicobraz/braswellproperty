@@ -225,7 +225,7 @@ p {
 
 .intent-label {
   display: block;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-ink-soft);
   margin-bottom: 10px;
@@ -270,11 +270,12 @@ p {
 .hero-process .process-steps {
   justify-content: center;
   gap: 14px 12px;
+  font-size: 0.82rem;
 }
 
 .process-intro {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-style: italic;
   color: var(--color-ink);
   margin: 0 0 18px;
@@ -284,7 +285,7 @@ p {
 .process-outro {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-size: clamp(1.15rem, 1.9vw, 1.45rem);
   color: var(--color-primary-dark);
   margin: 18px 0 0;
   text-align: center;
@@ -583,11 +584,16 @@ p {
 
 .contact-details .label {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-ink-soft);
   margin-bottom: 2px;
+}
+
+.contact-details a,
+.contact-details > div > span:not(.label) {
+  font-size: 1.05rem;
 }
 
 .contact-details a {
