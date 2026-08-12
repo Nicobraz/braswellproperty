@@ -377,7 +377,11 @@ p {
 
 .fact-list li {
   color: var(--color-ink-soft);
-  font-size: 0.95rem;
+  font-size: 1.15rem;
+}
+
+.about-copy p {
+  font-size: 1.15rem;
 }
 
 /* Service Area */
