@@ -267,6 +267,7 @@ p {
 
 .hero-process .process-steps {
   justify-content: center;
+  gap: 14px 12px;
 }
 
 .process-intro {
