@@ -23,8 +23,8 @@ const buyersSection = document.getElementById("approach");
 const sellersSection = document.getElementById("for-sellers");
 
 const headingByIntent = {
-  buy: "Thinking about buying? Let's talk.",
-  sell: "Thinking about selling? Let's talk.",
+  buy: "Thinking about buying?<br>Let's talk.",
+  sell: "Thinking about selling?<br>Let's talk.",
   both: "Let's start with a conversation.",
 };
 
@@ -45,7 +45,7 @@ intentButtons.forEach((btn) => {
 
     intentButtons.forEach((b) => b.classList.toggle("active", b === btn));
     interestSelect.value = intent;
-    contactHeading.textContent = headingByIntent[intent];
+    contactHeading.innerHTML = headingByIntent[intent];
     updateMessagePlaceholder(intent);
 
     if (intent === "sell") {
