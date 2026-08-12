@@ -265,12 +265,17 @@ p {
   border-top: 1px solid var(--color-border);
 }
 
+.hero-process .process-steps {
+  justify-content: center;
+}
+
 .process-intro {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-style: italic;
   color: var(--color-ink);
   margin: 0 0 18px;
+  text-align: center;
 }
 
 .process-outro {
@@ -279,6 +284,7 @@ p {
   font-size: clamp(1.3rem, 2.2vw, 1.7rem);
   color: var(--color-primary-dark);
   margin: 18px 0 0;
+  text-align: center;
 }
 
 .process-steps {
