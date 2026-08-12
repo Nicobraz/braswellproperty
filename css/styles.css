@@ -201,6 +201,7 @@ p {
 .hero-sub {
   font-size: 1.08rem;
   max-width: 46ch;
+  text-wrap: balance;
 }
 
 .hero-copy .eyebrow,
