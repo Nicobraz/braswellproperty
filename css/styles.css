@@ -425,6 +425,17 @@ p {
   border-bottom: 1px solid var(--color-border);
 }
 
+.approach > .container > .eyebrow,
+.approach > .container > h2,
+.approach > .container > .process-desc,
+.sellers > .container > .eyebrow,
+.sellers > .container > h2,
+.sellers > .container > .process-desc {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Social */
 .social {
   padding: 96px 0;
