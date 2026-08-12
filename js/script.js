@@ -18,12 +18,13 @@ nav.querySelectorAll("a").forEach((link) => {
 const intentButtons = document.querySelectorAll(".intent-btn");
 const interestSelect = document.getElementById("interest");
 const contactHeading = document.getElementById("contactHeading");
-const contactSection = document.getElementById("contact");
 const messageField = document.getElementById("message");
+const buyersSection = document.getElementById("approach");
+const sellersSection = document.getElementById("for-sellers");
 
 const headingByIntent = {
-  buy: "Thinking about buying?",
-  sell: "Thinking about selling?",
+  buy: "Thinking about buying?<br>Let's talk.",
+  sell: "Thinking about selling?<br>Let's talk.",
   both: "Let's start with a conversation.",
 };
 
@@ -44,9 +45,18 @@ intentButtons.forEach((btn) => {
 
     intentButtons.forEach((b) => b.classList.toggle("active", b === btn));
     interestSelect.value = intent;
-    contactHeading.textContent = headingByIntent[intent];
+    contactHeading.innerHTML = headingByIntent[intent];
     updateMessagePlaceholder(intent);
-    contactSection.scrollIntoView({ behavior: "smooth" });
+
+    if (intent === "sell") {
+      sellersSection.scrollIntoView({ behavior: "smooth" });
+    } else if (intent === "both") {
+      const headerHeight = document.querySelector("header").getBoundingClientRect().height;
+      const targetY = buyersSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top: targetY, behavior: "smooth" });
+    } else {
+      buyersSection.scrollIntoView({ behavior: "smooth" });
+    }
   });
 });
 
