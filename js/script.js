@@ -18,13 +18,12 @@ nav.querySelectorAll("a").forEach((link) => {
 const intentButtons = document.querySelectorAll(".intent-btn");
 const interestSelect = document.getElementById("interest");
 const contactHeading = document.getElementById("contactHeading");
+const contactSection = document.getElementById("contact");
 const messageField = document.getElementById("message");
-const buyersSection = document.getElementById("approach");
-const sellersSection = document.getElementById("for-sellers");
 
 const headingByIntent = {
-  buy: "Thinking about buying?<br>Let's talk.",
-  sell: "Thinking about selling?<br>Let's talk.",
+  buy: "Thinking about buying?",
+  sell: "Thinking about selling?",
   both: "Let's start with a conversation.",
 };
 
@@ -45,18 +44,9 @@ intentButtons.forEach((btn) => {
 
     intentButtons.forEach((b) => b.classList.toggle("active", b === btn));
     interestSelect.value = intent;
-    contactHeading.innerHTML = headingByIntent[intent];
+    contactHeading.textContent = headingByIntent[intent];
     updateMessagePlaceholder(intent);
-
-    if (intent === "sell") {
-      sellersSection.scrollIntoView({ behavior: "smooth" });
-    } else if (intent === "both") {
-      const headerHeight = document.querySelector("header").getBoundingClientRect().height;
-      const targetY = buyersSection.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scrollTo({ top: targetY, behavior: "smooth" });
-    } else {
-      buyersSection.scrollIntoView({ behavior: "smooth" });
-    }
+    contactSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 
@@ -182,6 +172,7 @@ const cityData = {
     name: "Mapleton, Utah",
     description:
       "Mapleton offers a quiet, semi-rural feel with larger properties and stunning views of Spanish Fork Peak and Maple Mountain.",
+    image: "assets/mapleton.jpg",
   },
   payson: {
     name: "Payson, Utah",
