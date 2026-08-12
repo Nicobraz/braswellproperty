@@ -679,9 +679,12 @@ input:focus, select:focus, textarea:focus {
 #service-area,
 #social,
 #contact,
-#approach,
 #for-sellers {
   scroll-margin-top: 115px;
+}
+
+#approach {
+  scroll-margin-top: 260px;
 }
 
 /* City modal */
