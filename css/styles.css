@@ -310,6 +310,18 @@ p {
   margin-right: 6px;
 }
 
+.approach .process-steps,
+.sellers .process-steps {
+  font-size: 0.8rem;
+  gap: 4px 6px;
+  letter-spacing: 0.015em;
+}
+
+.approach .process-steps .step-num,
+.sellers .process-steps .step-num {
+  margin-right: 4px;
+}
+
 .process-steps .step-arrow {
   color: var(--color-ink-soft);
   opacity: 0.5;
