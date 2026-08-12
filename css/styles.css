@@ -381,7 +381,9 @@ p {
   font-size: 1.15rem;
 }
 
-.about-copy p {
+.about-copy p,
+.service-area-copy p,
+.contact-intro p {
   font-size: 1.15rem;
 }
 
