@@ -306,6 +306,11 @@ p {
   opacity: 0.5;
 }
 
+.process-steps .step-plus {
+  color: #c99a5b;
+  font-weight: 700;
+}
+
 .process-desc {
   margin: 0 0 18px;
   color: var(--color-ink-soft);
