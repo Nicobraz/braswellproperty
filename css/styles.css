@@ -382,8 +382,8 @@ p {
 }
 
 .about-copy p,
-.service-area-copy p,
-.contact-intro p {
+.service-area-copy p:not(.eyebrow),
+.contact-intro p:not(.eyebrow) {
   font-size: 1.15rem;
 }
 
@@ -480,6 +480,14 @@ p {
 
 .social-header .eyebrow {
   margin-bottom: 8px;
+}
+
+.service-area-copy .eyebrow,
+.approach > .container > .eyebrow,
+.sellers > .container > .eyebrow,
+.social-header .eyebrow,
+.contact-intro .eyebrow {
+  font-size: 1.05rem;
 }
 
 .social-icons {
