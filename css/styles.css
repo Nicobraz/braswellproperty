@@ -194,8 +194,24 @@ p {
 .hero-inner {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
+  grid-template-areas:
+    "copy visual"
+    "process visual";
   gap: 56px;
-  align-items: center;
+  align-items: start;
+}
+
+.hero-inner .hero-copy {
+  grid-area: copy;
+}
+
+.hero-inner .hero-visual {
+  grid-area: visual;
+  align-self: center;
+}
+
+.hero-inner .hero-process {
+  grid-area: process;
 }
 
 .hero-sub {
@@ -821,6 +837,13 @@ input:focus, select:focus, textarea:focus {
   .contact-inner,
   .service-area-inner {
     grid-template-columns: 1fr;
+  }
+
+  .hero-inner {
+    grid-template-areas:
+      "copy"
+      "visual"
+      "process";
   }
 
   .about-photo {
