@@ -267,6 +267,12 @@ p {
   border-top: 1px solid var(--color-border);
 }
 
+@media (min-width: 861px) {
+  .hero-process {
+    padding-top: 40px;
+  }
+}
+
 .hero-process .process-steps {
   justify-content: center;
   gap: 14px 12px;
