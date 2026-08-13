@@ -1,5 +1,21 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const heroProcess = document.getElementById("heroProcess");
+const heroVisual = document.getElementById("heroVisual");
+const heroCopy = document.querySelector(".hero-copy");
+const heroMobileQuery = window.matchMedia("(max-width: 860px)");
+
+function placeHeroProcess(isMobile) {
+  if (isMobile) {
+    heroVisual.insertAdjacentElement("afterend", heroProcess);
+  } else {
+    heroCopy.appendChild(heroProcess);
+  }
+}
+
+placeHeroProcess(heroMobileQuery.matches);
+heroMobileQuery.addEventListener("change", (e) => placeHeroProcess(e.matches));
+
 const navToggle = document.getElementById("navToggle");
 const nav = document.getElementById("nav");
 
