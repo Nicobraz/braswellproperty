@@ -434,6 +434,13 @@ p {
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
 }
 
+.service-area-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
 /* Approach */
 .approach {
   padding: 96px 0;
