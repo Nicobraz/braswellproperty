@@ -608,6 +608,17 @@ p {
   color: var(--color-primary-dark);
 }
 
+@media (min-width: 861px) {
+  .contact-details .label {
+    font-size: 1rem;
+  }
+
+  .contact-details a,
+  .contact-details > div > span:not(.label) {
+    font-size: 1.15rem;
+  }
+}
+
 .contact-form {
   background: var(--color-border);
   border-radius: var(--radius);
