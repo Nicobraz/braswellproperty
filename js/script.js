@@ -211,60 +211,70 @@ const cityData = {
     description:
       "Utah's capital pairs a vibrant downtown and diverse neighborhoods with quick access to world-class ski resorts in the surrounding canyons.",
     image: "assets/salt-lake-city.jpg",
+    price: "~$580K",
   },
   "south-jordan": {
     name: "South Jordan, Utah",
     description:
       "South Jordan is known for master-planned communities like Daybreak, plus shopping, trails, and easy freeway access.",
     image: "assets/south-jordan.jpg",
+    price: "~$665K",
   },
   "west-jordan": {
     name: "West Jordan, Utah",
     description:
       "One of Utah's largest cities, West Jordan offers diverse, affordable neighborhoods close to shopping, parks, and the Jordan River Parkway.",
     image: "assets/west-jordan.jpg",
+    price: "~$560K",
   },
   "west-valley-city": {
     name: "West Valley City, Utah",
     description:
       "Utah's second-largest city, West Valley City is known for its cultural diversity and community amenities like the Utah Cultural Celebration Center.",
     image: "assets/west-valley-city.jpg",
+    price: "~$470K",
   },
   sandy: {
     name: "Sandy, Utah",
     description:
       "Sandy is an established suburb with excellent schools and quick access to Alta and Snowbird, making it a favorite for families who love the mountains.",
     image: "assets/sandy.jpg",
+    price: "~$670K",
   },
   draper: {
     name: "Draper, Utah",
     description:
       "Nestled at the base of the mountains, Draper mixes a growing tech corridor with outdoor access to Corner Canyon's extensive trail system.",
     image: "assets/draper.jpg",
+    price: "~$820K",
   },
   riverton: {
     name: "Riverton, Utah",
     description:
       "Riverton offers a family-friendly, small-town feel along the Jordan River, with growing retail and dining options nearby.",
     image: "assets/riverton.jpg",
+    price: "~$625K",
   },
   herriman: {
     name: "Herriman, Utah",
     description:
       "One of the fastest-growing cities in the state, Herriman offers new master-planned communities and sweeping mountain and valley views.",
     image: "assets/herriman.jpg",
+    price: "~$605K",
   },
   bluffdale: {
     name: "Bluffdale, Utah",
     description:
       "Bluffdale blends semi-rural charm with new development, sitting near Camp Williams and the rapidly growing Point of the Mountain area.",
     image: "assets/bluffdale.jpg",
+    price: "~$615K",
   },
   "cottonwood-heights": {
     name: "Cottonwood Heights, Utah",
     description:
       "A foothill community at the mouth of Big and Little Cottonwood Canyons, Cottonwood Heights is the gateway to some of the best skiing in the world.",
     image: "assets/cottonwood-heights.jpg",
+    price: "~$785K",
   },
   "cedar-hills": {
     name: "Cedar Hills, Utah",
@@ -283,6 +293,7 @@ const cityData = {
     description:
       "A centrally located Salt Lake County city, Taylorsville offers established neighborhoods, easy freeway access, and proximity to the Jordan River Parkway.",
     image: "assets/taylorsville.jpg",
+    price: "~$500K",
   },
 };
 
@@ -290,6 +301,7 @@ const cityModal = document.getElementById("cityModal");
 const cityModalImage = document.getElementById("cityModalImage");
 const cityModalTitle = document.getElementById("cityModalTitle");
 const cityModalDesc = document.getElementById("cityModalDesc");
+const cityModalPrice = document.getElementById("cityModalPrice");
 
 function openCityModal(citySlug) {
   const city = cityData[citySlug];
@@ -298,6 +310,8 @@ function openCityModal(citySlug) {
   cityModalTitle.textContent = city.name;
   cityModalDesc.textContent = city.description;
   cityModalImage.style.backgroundImage = city.image ? `url(${city.image})` : "";
+  cityModalPrice.textContent = city.price ? `Typical Home Price: ${city.price}` : "";
+  cityModalPrice.style.display = city.price ? "" : "none";
   cityModal.classList.add("open");
   cityModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";

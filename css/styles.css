@@ -780,6 +780,15 @@ input:focus, select:focus, textarea:focus {
   margin: 0;
 }
 
+.city-modal-panel p#cityModalDesc {
+  margin-bottom: 12px;
+}
+
+.city-modal-price {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
 .city-modal-close {
   position: absolute;
   top: 16px;
