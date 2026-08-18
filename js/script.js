@@ -133,78 +133,91 @@ const cityData = {
     description:
       "Highland is where I grew up. It's a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
     image: "assets/highland.jpg",
+    price: "~$975K",
   },
   "american-fork": {
     name: "American Fork, Utah",
     description:
       "Bordered by Utah Lake and the Wasatch Mountains, American Fork blends small-town charm with easy access to American Fork Canyon, Timpanogos Cave, and a growing downtown scene.",
     image: "assets/american-fork.jpg",
+    price: "~$530K",
   },
   lehi: {
     name: "Lehi, Utah",
     description:
       "Home to Silicon Slopes and Thanksgiving Point, Lehi is one of Utah's fastest-growing cities, blending tech-driven energy with family-friendly master-planned neighborhoods.",
     image: "assets/lehi.jpg",
+    price: "~$575K",
   },
   orem: {
     name: "Orem, Utah",
     description:
       "Orem offers a walkable, community feel with easy access to Utah Lake, the Wasatch mountains, and Utah Valley University.",
     image: "assets/orem.jpg",
+    price: "~$510K",
   },
   vineyard: {
     name: "Vineyard, Utah",
     description:
       "One of Utah's newest and fastest-growing cities, Vineyard sits right on the shore of Utah Lake, offering a master-planned community with modern homes, parks, and lake views just minutes from Orem and Provo.",
     image: "assets/vineyard.jpg",
+    price: "~$530K",
   },
   provo: {
     name: "Provo, Utah",
     description:
       "Utah County's largest city, Provo pairs a vibrant downtown and BYU campus energy with quick access to Provo Canyon and Rock Canyon trails.",
     image: "assets/provo.jpg",
+    price: "~$485K",
   },
   "saratoga-springs": {
     name: "Saratoga Springs, Utah",
     description:
       "A fast-growing lakeside community on Utah Lake, Saratoga Springs offers new construction, master-planned neighborhoods, and some of the best sunset views around.",
     image: "assets/saratoga-springs.jpg",
+    price: "~$560K",
   },
   "eagle-mountain": {
     name: "Eagle Mountain, Utah",
     description:
       "One of Utah's fastest-growing cities, Eagle Mountain offers spacious lots, sweeping valley views, and a more laid-back pace at the edge of Utah County.",
     image: "assets/eagle-mountain.jpg",
+    price: "~$510K",
   },
   "pleasant-grove": {
     name: "Pleasant Grove, Utah",
     description:
       "Pleasant Grove combines a historic downtown and close-knit community feel with easy access to Timpanogos hiking trails.",
     image: "assets/pleasant-grove.jpg",
+    price: "~$560K",
   },
   alpine: {
     name: "Alpine, Utah",
     description:
       "Tucked against the mountains with larger lots and top-rated schools, Alpine is one of Utah County's most scenic and sought-after communities.",
     image: "assets/alpine.jpg",
+    price: "~$1.2M",
   },
   "spanish-fork": {
     name: "Spanish Fork, Utah",
     description:
       "Spanish Fork blends small-town charm with steady growth, home to the annual Fiesta Days celebration and easy access to Spanish Fork Canyon.",
     image: "assets/spanish-fork.jpg",
+    price: "~$520K",
   },
   mapleton: {
     name: "Mapleton, Utah",
     description:
       "Mapleton offers a quiet, semi-rural feel with larger properties and stunning views of Spanish Fork Peak and Maple Mountain.",
     image: "assets/mapleton.jpg",
+    price: "~$725K",
   },
   payson: {
     name: "Payson, Utah",
     description:
       "In southern Utah County, Payson offers small-town charm, a historic temple, and easy access to Payson Canyon and Payson Lakes.",
     image: "assets/payson.jpg",
+    price: "~$475K",
   },
   "salt-lake-city": {
     name: "Salt Lake City, Utah",
@@ -281,12 +294,14 @@ const cityData = {
     description:
       "A small, quiet city bordering Pleasant Grove and Highland, Cedar Hills is known for its golf course, well-kept neighborhoods, and easy access to trails along the Wasatch Front.",
     image: "assets/cedar-hills.jpg",
+    price: "~$670K",
   },
   lindon: {
     name: "Lindon, Utah",
     description:
       "Tucked between Orem and Pleasant Grove, Lindon offers a quiet residential feel with quick access to I-15, Utah Lake, and the Lindon Marina.",
     image: "assets/lindon.jpg",
+    price: "~$735K",
   },
   taylorsville: {
     name: "Taylorsville, Utah",
