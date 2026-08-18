@@ -774,6 +774,7 @@ input:focus, select:focus, textarea:focus {
 
 .city-modal-panel h3 {
   margin: 0 0 10px;
+  text-align: center;
 }
 
 .city-modal-panel p {
