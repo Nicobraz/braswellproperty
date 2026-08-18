@@ -785,6 +785,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .city-modal-price {
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--color-primary-dark);
 }
