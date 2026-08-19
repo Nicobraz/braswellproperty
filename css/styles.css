@@ -446,6 +446,10 @@ p {
 }
 
 .btn-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
   background: var(--color-border);
   color: var(--color-primary-dark);
   font-family: var(--font-body);
@@ -461,6 +465,12 @@ p {
 .btn-map:hover {
   background: var(--color-primary);
   color: #fff;
+}
+
+.btn-map-sub {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.75;
 }
 
 .service-area-visual {
