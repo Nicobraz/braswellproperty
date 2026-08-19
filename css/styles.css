@@ -450,8 +450,8 @@ p {
   color: var(--color-primary-dark);
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 0.95rem;
-  padding: 14px 28px;
+  font-size: 0.85rem;
+  padding: 8px 16px;
   border: none;
   border-radius: 999px;
   cursor: pointer;
