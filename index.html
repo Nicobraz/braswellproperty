@@ -149,6 +149,9 @@
           <img src="assets/service-area-map.png" alt="" />
         </div>
       </div>
+      <div class="new-construction-cta">
+        <button type="button" class="btn-map" id="newConstructionBtn">UT County New Construction Map</button>
+      </div>
     </section>
 
     <!-- APPROACH -->
@@ -344,6 +347,15 @@
       <h3 id="cityModalTitle"></h3>
       <p id="cityModalDesc"></p>
       <p id="cityModalPrice" class="city-modal-price"></p>
+    </div>
+  </div>
+
+  <!-- New construction map popup -->
+  <div class="city-modal map-modal" id="mapModal" aria-hidden="true">
+    <div class="city-modal-backdrop" data-close-map></div>
+    <div class="city-modal-panel map-modal-panel" role="dialog" aria-modal="true" aria-label="Utah County New Construction Map">
+      <button type="button" class="city-modal-close" data-close-map aria-label="Close">&times;</button>
+      <img src="assets/utah-county-new-construction.png" alt="Utah County New Construction Map" />
     </div>
   </div>
 

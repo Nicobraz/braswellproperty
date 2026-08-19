@@ -430,6 +430,29 @@ p {
   color: #fff;
 }
 
+.new-construction-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.btn-map {
+  background: var(--color-border);
+  color: var(--color-primary-dark);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-map:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 .service-area-visual {
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
 }
@@ -825,6 +848,20 @@ input:focus, select:focus, textarea:focus {
   background: linear-gradient(135deg, #f5efe6, #ebdecd);
   background-size: cover;
   background-position: center;
+}
+
+.map-modal-panel {
+  max-width: 640px;
+  padding: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.map-modal-panel img {
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 4px);
+  display: block;
 }
 
 /* Responsive */

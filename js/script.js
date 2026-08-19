@@ -350,4 +350,28 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && cityModal.classList.contains("open")) {
     closeCityModal();
   }
+  if (e.key === "Escape" && mapModal.classList.contains("open")) {
+    closeMapModal();
+  }
+});
+
+const mapModal = document.getElementById("mapModal");
+const newConstructionBtn = document.getElementById("newConstructionBtn");
+
+function openMapModal() {
+  mapModal.classList.add("open");
+  mapModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMapModal() {
+  mapModal.classList.remove("open");
+  mapModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+newConstructionBtn.addEventListener("click", openMapModal);
+
+mapModal.querySelectorAll("[data-close-map]").forEach((el) => {
+  el.addEventListener("click", closeMapModal);
 });
