@@ -435,6 +435,16 @@ p {
   text-align: center;
 }
 
+@media (min-width: 861px) {
+  .new-construction-cta {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+    text-align: left;
+  }
+}
+
 .btn-map {
   background: var(--color-border);
   color: var(--color-primary-dark);
