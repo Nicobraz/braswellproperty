@@ -743,15 +743,23 @@ input:focus, select:focus, textarea:focus {
 }
 
 .lender-photo {
+  display: block;
   width: 112px;
   height: 112px;
   border-radius: 50%;
   margin-bottom: 16px;
   background: linear-gradient(135deg, #f5efe6, #ebdecd);
+  overflow: hidden;
 }
 
 .lender-photo-2 {
   background: linear-gradient(135deg, #ede8da, #ebdecd);
+}
+
+.lender-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .lender-card h3 {
