@@ -843,9 +843,15 @@ input:focus, select:focus, textarea:focus {
 }
 
 .city-modal-builder a {
+  display: block;
   color: var(--color-primary-dark);
   font-weight: 600;
   text-decoration: underline;
+  margin-top: 4px;
+}
+
+.city-modal-builder a:first-child {
+  margin-top: 0;
 }
 
 .city-modal-close {

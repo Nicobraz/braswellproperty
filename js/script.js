@@ -134,7 +134,10 @@ const cityData = {
       "Highland is where I grew up. It's a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
     image: "assets/highland.jpg",
     price: "~$975K",
-    builder: { name: "Ivory Homes", url: "https://ivoryhomes.com/community-details/ridgeview-scandia-cottages" },
+    builders: [
+      { name: "Ivory Homes", url: "https://ivoryhomes.com/community-details/ridgeview-scandia-cottages" },
+      { name: "Home Center Construction", url: "https://homecenterconstruction.com/communities/?wpv-city%5B%5D=highland&wpv_aux_current_post_id=264&wpv_aux_parent_post_id=264&wpv_view_count=265" },
+    ],
   },
   "american-fork": {
     name: "American Fork, Utah",
@@ -329,10 +332,12 @@ function openCityModal(citySlug) {
   cityModalImage.style.backgroundImage = city.image ? `url(${city.image})` : "";
   cityModalPrice.textContent = city.price ? `Typical Home Price: ${city.price}` : "";
   cityModalPrice.style.display = city.price ? "" : "none";
-  cityModalBuilder.innerHTML = city.builder
-    ? `<a href="${city.builder.url}" target="_blank" rel="noopener">${city.builder.name}</a>`
+  cityModalBuilder.innerHTML = city.builders
+    ? city.builders
+        .map((b) => `<a href="${b.url}" target="_blank" rel="noopener">${b.name}</a>`)
+        .join("")
     : "";
-  cityModalBuilder.style.display = city.builder ? "" : "none";
+  cityModalBuilder.style.display = city.builders ? "" : "none";
   cityModal.classList.add("open");
   cityModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
