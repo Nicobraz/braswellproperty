@@ -716,6 +716,67 @@ input:focus, select:focus, textarea:focus {
   color: #a33a3a;
 }
 
+/* Lenders */
+.lenders {
+  padding: 96px 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.lenders h2 {
+  margin-bottom: 40px;
+}
+
+.lender-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 260px));
+  justify-content: center;
+  gap: 48px;
+}
+
+.lender-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lender-photo {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #f5efe6, #ebdecd);
+}
+
+.lender-photo-2 {
+  background: linear-gradient(135deg, #ede8da, #ebdecd);
+}
+
+.lender-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.lender-card a {
+  display: block;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.lender-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .lender-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Footer */
 .site-footer {
   background: var(--color-primary-dark);
