@@ -836,6 +836,18 @@ input:focus, select:focus, textarea:focus {
   text-align: center;
 }
 
+.city-modal-builder {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 6px !important;
+}
+
+.city-modal-builder a {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 .city-modal-close {
   position: absolute;
   top: 16px;

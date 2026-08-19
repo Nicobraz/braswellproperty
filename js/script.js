@@ -134,6 +134,7 @@ const cityData = {
       "Highland is where I grew up. It's a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
     image: "assets/highland.jpg",
     price: "~$975K",
+    builder: { name: "Ivory Homes", url: "https://www.ivoryhomes.com" },
   },
   "american-fork": {
     name: "American Fork, Utah",
@@ -317,6 +318,7 @@ const cityModalImage = document.getElementById("cityModalImage");
 const cityModalTitle = document.getElementById("cityModalTitle");
 const cityModalDesc = document.getElementById("cityModalDesc");
 const cityModalPrice = document.getElementById("cityModalPrice");
+const cityModalBuilder = document.getElementById("cityModalBuilder");
 
 function openCityModal(citySlug) {
   const city = cityData[citySlug];
@@ -327,6 +329,10 @@ function openCityModal(citySlug) {
   cityModalImage.style.backgroundImage = city.image ? `url(${city.image})` : "";
   cityModalPrice.textContent = city.price ? `Typical Home Price: ${city.price}` : "";
   cityModalPrice.style.display = city.price ? "" : "none";
+  cityModalBuilder.innerHTML = city.builder
+    ? `<a href="${city.builder.url}" target="_blank" rel="noopener">${city.builder.name}</a>`
+    : "";
+  cityModalBuilder.style.display = city.builder ? "" : "none";
   cityModal.classList.add("open");
   cityModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
