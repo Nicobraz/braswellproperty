@@ -134,10 +134,6 @@ const cityData = {
       "Highland is where I grew up. It's a quiet, family-oriented city tucked at the base of Mt. Timpanogos, known for top-rated schools, spacious lots, and some of the best mountain views in Utah County.",
     image: "assets/highland.jpg",
     price: "~$975K",
-    builders: [
-      { name: "Ivory Homes", url: "https://ivoryhomes.com/community-details/ridgeview-scandia-cottages" },
-      { name: "Home Center Construction", url: "https://homecenterconstruction.com/communities/?wpv-city%5B%5D=highland&wpv_aux_current_post_id=264&wpv_aux_parent_post_id=264&wpv_view_count=265" },
-    ],
   },
   "american-fork": {
     name: "American Fork, Utah",
