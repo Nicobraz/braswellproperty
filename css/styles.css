@@ -964,10 +964,17 @@ input:focus, select:focus, textarea:focus {
 }
 
 .map-modal-panel {
-  max-width: 640px;
+  max-width: 960px;
   padding: 20px;
   max-height: 90vh;
   overflow-y: auto;
+  display: flex;
+  gap: 24px;
+}
+
+.map-modal-image-col {
+  flex: 1 1 360px;
+  min-width: 0;
 }
 
 .map-modal-panel img {
@@ -975,6 +982,57 @@ input:focus, select:focus, textarea:focus {
   height: auto;
   border-radius: calc(var(--radius) - 4px);
   display: block;
+}
+
+.map-modal-list {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.map-modal-list h3 {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+}
+
+.map-modal-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.map-modal-list li {
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.map-modal-list li:first-child {
+  border-top: none;
+}
+
+.map-modal-city {
+  display: block;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-size: 0.9rem;
+}
+
+.map-modal-builders {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+  margin-top: 2px;
+}
+
+.map-modal-builders a {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .map-modal-panel {
+    flex-direction: column;
+  }
 }
 
 /* Responsive */
