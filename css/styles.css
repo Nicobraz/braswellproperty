@@ -1016,6 +1016,11 @@ input:focus, select:focus, textarea:focus {
   font-size: 0.9rem;
 }
 
+.map-modal-city-price {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 .map-modal-builders {
   display: block;
   font-size: 0.82rem;
